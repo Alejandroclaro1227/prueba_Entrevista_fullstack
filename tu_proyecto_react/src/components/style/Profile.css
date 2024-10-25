@@ -1,0 +1,102 @@
+:root {
+  --color-bg: #f7fafc;
+  --color-border: #d1d5db;
+  --color-blue: #3b82f6;
+  --color-blue-dark: #2563eb;
+  --color-green: #22c55e;
+  --color-green-dark: #16a34a;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: var(--color-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+input {
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 16px;
+  transition: border-color 0.2s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--color-blue);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button.bg-green {
+  background-color: var(--color-green);
+  color: white;
+}
+
+button.bg-green:hover {
+  background-color: var(--color-green-dark);
+}
+
+button.bg-blue {
+  background-color: var(--color-blue);
+  color: white;
+}
+
+button.bg-blue:hover {
+  background-color: var(--color-blue-dark);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  input {
+    max-width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
